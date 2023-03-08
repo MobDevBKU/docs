@@ -6,6 +6,6 @@
 
 - [Busmap](./swot/busmap.md)
 - [Go!Bust](./swot/go!bus.md)
-- [Bus Movii](./swot/bus_movii.md)
+- [Bus Movii](./swot/moovit.md)
 - [VBus](./swot/vbus.md)
 - [Timbus](./swot/timbus.md)
