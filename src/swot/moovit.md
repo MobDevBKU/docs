@@ -14,13 +14,9 @@
 ## Strengths (Điểm mạnh)
 
 - Cơ sở người dùng lớn: Moovit có cơ sở người dùng lớn với hơn 865 triệu người dùng trên 3200 thành phố ở 106 quốc gia. Điều này làm cho Moovit trở thành một trong những ứng dụng giao thông công cộng được sử dụng rộng rãi nhất trên thế giới.
-
 - Dữ liệu thời gian thực: Moovit cung cấp thông tin thời gian thực về lịch trình giao thông công cộng, sự chậm trễ và gián đoạn. Tính năng này giúp người dùng lên kế hoạch cho hành trình của họ tốt hơn và tránh bị chậm trễ.
-
 - Điều hướng đa phương thức: Moovit cung cấp cho người dùng các tùy chọn điều hướng đa phương thức bao gồm đi bộ, đi xe đạp, giao thông công cộng và dịch vụ chia sẻ chuyến đi. Tính năng này cho phép người dùng lập kế hoạch và tối ưu hóa hành trình của họ dựa trên sở thích của họ.
-
 - Tích hợp với các ứng dụng khác: Moovit có thể được tích hợp với các ứng dụng khác như Uber và Lyft, giúp người dùng lập kế hoạch và hoàn thành hành trình dễ dàng hơn.
-
 - Giao diện thân thiện với người dùng: Moovit có giao diện thân thiện với người dùng, dễ điều hướng, giúp nhiều người dùng có thể truy cập
 
 ## Weaknesses (Điểm yếu)
@@ -34,13 +30,9 @@
 ## Oppoturnities (Cơ hội)
 
 - Hợp tác với các nhà cung cấp dịch vụ vận tải: Moovit có cơ hội hợp tác với các nhà cung cấp dịch vụ vận chuyển công cộng để mở rộng phạm vi phủ sóng của họ cũng như cải thiện độ chính xác và độ tin cậy của thông tin được cung cấp trên ứng dụng của họ.
-
 - Tích hợp với các dịch vụ di chuyển khác: Moovit có thể tích hợp với các dịch vụ di chuyển khác, chẳng hạn như dịch vụ chia sẻ xe đạp hoặc chia sẻ ô tô, để cung cấp cho người dùng trải nghiệm lập kế hoạch hành trình hoàn chỉnh từ đầu đến cuối.
-
 - Mở rộng sang các thị trường mới: Moovit có cơ hội mở rộng phạm vi hoạt động sang các thị trường mới, đặc biệt là ở các quốc gia đang phát triển nơi cơ sở hạ tầng giao thông công cộng vẫn đang phát triển.
-
 - Phân tích dữ liệu: Moovit có thể tận dụng dữ liệu được thu thập thông qua ứng dụng của họ để hiểu rõ hơn về hành vi của người dùng, mô hình du lịch và các xu hướng khác, có thể được sử dụng để cải thiện ứng dụng và phát triển các tính năng mới.
-
 - Dịch vụ đáp ứng nhu cầu: Moovit có thể khám phá các cơ hội để cung cấp các dịch vụ đáp ứng nhu cầu, chẳng hạn như dịch vụ đưa đón theo yêu cầu, để cung cấp cho người dùng các tùy chọn giao thông linh hoạt và thuận tiện hơn.
 
 ## Threats (Đe dọa)
