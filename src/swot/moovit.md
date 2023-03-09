@@ -64,4 +64,4 @@
 
 - Lo ngại về quyền riêng tư: Với nhận thức ngày càng tăng về quyền riêng tư và bảo mật dữ liệu, nguy cơ người dùng phản ứng dữ dội đối với các ứng dụng giao thông như Moovit thu thập và sử dụng dữ liệu cá nhân ngày càng tăng.
 
-Những thách thức về quy định: Moovit có thể phải đối mặt với những thách thức về quy định liên quan đến quyền riêng tư dữ liệu, cạnh tranh và các vấn đề khác, điều này có thể ảnh hưởng đến khả năng hoạt động của họ ở một số thị trường nhất định hoặc cung cấp một số dịch vụ nhất định.
+- Những thách thức về quy định: Moovit có thể phải đối mặt với những thách thức về quy định liên quan đến quyền riêng tư dữ liệu, cạnh tranh và các vấn đề khác, điều này có thể ảnh hưởng đến khả năng hoạt động của họ ở một số thị trường nhất định hoặc cung cấp một số dịch vụ nhất định.
