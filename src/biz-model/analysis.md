@@ -1,9 +1,3 @@
-# Business Canvas Template for BusMap application
-
-## [Figma](https://www.figma.com/file/G5iZiKAtHa8HGFnDq91Um5/Onboarding?node-id=30%3A97&t=MIXYXhNe45wU3gK5-0)
-
-## Analysis
-
 1. General features for the app:
     - Overview:
     - Start time
