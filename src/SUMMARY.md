@@ -3,9 +3,10 @@
 - [SWOT approach](./swot.md)
     - [Busmap](./swot/busmap.md)
     - [Go!Bust](./swot/go!bus.md)
-    - [Bus Movii](./swot/bus_movii.md)
-    - [VBus](./swot/vbus.md)
-    - [Timbus](./swot/timbus.md)
+    - [Moovit](./swot/moovit.md)
+    - [WanderU](./swot/wanderu.md)
+    - [FlixBus](./swot/flixbus.md)
+    
 - [Business Model](./biz.md)
     - [Business Analysis](./biz-model/analysis.md)
     - [Business Canvas](./biz-model/canvas.md)
