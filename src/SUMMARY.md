@@ -6,6 +6,9 @@
     - [Bus Movii](./swot/bus_movii.md)
     - [VBus](./swot/vbus.md)
     - [Timbus](./swot/timbus.md)
-- [Business Canvas](./canvas.md)
+- [Business Model](./biz.md)
+    - [Business Analysis](./biz-model/analysis.md)
+    - [Business Canvas](./biz-model/canvas.md)
 
+    
 - [Task 7](./btl_mobile/task7.md)
