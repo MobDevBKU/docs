@@ -12,7 +12,7 @@
 2. Solution:
 - Smart bus app của chúng tôi cung cấp thông tin thời gian thực về tuyến đường, thời gian xe đến trạm, các trạm gần nhất, lịch trình của các tuyến được tính toán với độ sai lệch thấp.
 - App sử dụng theo dõi GPS để cung cấp thời gian trực tiếp từng địa điểm của xe bus, để từ đó có thể ước lượng được thời gian di chuyển, theo dõi hành trình của tuyến xe.  
-- Ứng dụng tìm tuyến, thanh toán vé xe bus cho người dùng.
+- Ứng dụng tìm tuyến, thanh toán vé xe bus cho người dùng. Liên kết với các ví điện tử, dịch vụ của bên thứ ba để người dùng thanh toán thuận tiện nhất.
 - Tạo hệ thống liên kết chặt chẽ với bên vận hành xe bus, cung cấp giải pháp tiện lợi để quản lí, thống kê.
 - Ứng dụng cho phép người dùng lưu những tuyến đường hay đi lại để thuận tiện trong việc tìm kiếm, theo dõi.
 - Người dùng có thể để lại phản hồi ở trên ứng dụng, cung cấp thông tin các tuyến đường bằng văn bản, hình ảnh để mở rộng quy mô cho ứng dụng nhằm khắc phục tình trạng thiếu thông tin ở một số địa điểm.
