@@ -1,5 +1,6 @@
 # Summary
 
+- [First step](./questions.md)
 - [SWOT approach](./swot.md)
     - [Busmap](./swot/busmap.md)
     - [Go!Bust](./swot/go!bus.md)
@@ -10,6 +11,7 @@
 - [Business Model](./biz.md)
     - [Business Analysis](./biz-model/analysis.md)
     - [Business Canvas](./biz-model/canvas.md)
+- [Apps's slogan](./slogan.md)
 
 - [Features](./biz.md)
     - [Overview](./features/overview.md)

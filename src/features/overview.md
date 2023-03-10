@@ -16,14 +16,18 @@
 
 - Nó cũng giúp người dùng hiểu được đề xuất giá trị của sản phẩm hoặc dịch vụ và nó khác với các sản phẩm hoặc dịch vụ tương tự khác trên thị trường như thế nào. 
 
+# Technical approach:
+- Nhóm định nghĩa, sáng tạo, tham khảo các slogan, vision của các ứng dụng đã có như là core-values của ứng dụng. Lưu và hiển thị trên trang tổng quan
 
-# Context:
-1. Đức muốn tìm một tuyến xe bus để đi về nhà, Đức mở ứng dụng, một bản đồ sẽ được hiện ra với vị trí của Đức là trung tâm và được ghim trên bản đồ. Đức nhập địa chỉ nhà và kết quả hiện ra là danh sách các tuyến đường mà bạn có thể đi.
+- Thiết kế flow-diagram để biết được các features có liên quan đến trang tổng quan, hiện thị các nút bấm tương ứng
 
-2. Vinh muốn đi chơi vào dịp lễ tình nhân nhưng vì biết trước ngày hôm đó sẽ đông khách, nên Vinh muốn sử dụng ứng dụng để đặt vé trước.
-Nút đặt vé nằm ngay ở trang tổng quan nên Vinh dễ dàng bấm vào đấy.
+- Lưu thông tin người dùng, thông tin của doanh nghiệp vẩn tải, hiển thị ra trang tổng quan
 
-3. Mạnh vì để quên balo ở trên xe bus, Mạnh cần biết thông tin của xe bus, công ty vận tải (số điện thoại, email, ...) để có thể liên lạc nhằm được hỗ trợ. Mạnh mở ứng dụng và dễ dàng chọn vào sidebar bên trái, kéo xuống phần "Liên hệ" và có được thông tin mình cần.
+- Sử dụng các dịch vụ cung cấp bản đồ, GPS liên quan để hiển thị bản đồ.
+
+- Phát triển các APIs liên quan đến việc tìm kiếm, định tuyến tuyến đường.
+
+- Hiển thị các ví điện tử đối tác
 
 # Test:
 1. Định nghĩa toàn bộ bối cảnh cho feature "tổng quan"
