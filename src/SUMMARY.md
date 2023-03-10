@@ -13,7 +13,5 @@
 
 - [Features](./biz.md)
     - [Overview](./features/overview.md)
-    - [Business Canvas](./biz-model/canvas.md)
-
     
 - [Task 7](./btl_mobile/task7.md)
