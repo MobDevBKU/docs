@@ -20,5 +20,6 @@
     - [Wallet payment](./features/wallet_payment.md)
     - [Preferred routes](./features/preferred_routes.md)
 
+- [Impact Effort Matrix and features for MVP](./matrix_n_mvp.md)
     
 - [Task 7](./btl_mobile/task7.md)
