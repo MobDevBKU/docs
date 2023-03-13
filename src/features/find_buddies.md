@@ -18,7 +18,7 @@ Cung cấp cho người dùng khả năng gửi tin nhắn cho các hành khách
 
 Cho phép người dùng xếp hạng và đánh giá các hành khách khác dựa trên trải nghiệm đi chung xe của họ.
 
-## Benefit
+## Lợi ích
 
 - Cho phép người dùng kết nối với những hành khách khác có cùng sở thích và mô hình du lịch.
 
