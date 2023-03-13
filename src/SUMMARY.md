@@ -18,7 +18,7 @@
   - [Wallet payment](./features/wallet_payment.md)
   - [Preferred routes](./features/preferred_routes.md)
 - [Impact Effort Matrix and features for MVP](./matrix_n_mvp.md)
-- [Task 7](./user-story/index.md)
+- [User story](./user-story/index.md)
   - [Tổng quan](./user-story/overview.md)
   - [Tìm kiếm](./user-story/search.md)
   - [Đón xe thông minh](./user-story/smart-pickup.md)
