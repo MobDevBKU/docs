@@ -1,6 +1,6 @@
 # Trả lời các câu hỏi đặt ra khi bắt đầu một dự án ứng dụng di động
 
-### 1. Tôi muốn giải quyết những vấn đề và điểm đau nào?
+## 1. Tôi muốn giải quyết những vấn đề và điểm đau nào?
 
 Vấn đề và điểm đau cần giải quyết trong ứng dụng xe bus thông minh là việc cải thiện tính hiệu quả và độ chính xác của việc vận chuyển hành khách trên các tuyến đường, đồng thời tối ưu hoá quản lý và vận hành của các xe buýt. Cụ thể, những vấn đề này có thể bao gồm:
 
