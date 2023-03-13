@@ -14,7 +14,7 @@
 - [Features](./features.md)
   - [Overview](./features/overview.md)
   - [Finding locations](./features/find_locations.md)
-  - [Smart Pickup](/features/smart_pickup.md)
+  - [Smart Pickup](./features/smart_pickup.md)
   - [Picking the area](./features/select_area.md)
   - [Payment](./features/wallet_payment.md)
   - [Preferred routes](./features/preferred_routes.md)
