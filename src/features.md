@@ -1,7 +1,10 @@
 # Features Analysis
 
 - [Overview](./features/overview.md)
-- [Find locations](./features/find_locations.md)
-- [Select the area](./features/select_area.md)
-- [Wallet payment](./features/wallet_payment.md)
+- [Finding locations](./features/find_locations.md)
+- [Smart Pickup](/features/smart_pickup.md)
+- [Picking the area](./features/select_area.md)
+- [Payment](./features/wallet_payment.md)
 - [Preferred routes](./features/preferred_routes.md)
+- [Feedbacks](./features/feedbacks.md)
+- [Finding your buddies](./features/find_buddies.md)
