@@ -24,3 +24,6 @@
   - [Tổng quan](./user-story/overview.md)
   - [Tìm kiếm](./user-story/search.md)
   - [Đón xe thông minh](./user-story/smart-pickup.md)
+- [MVP User flows](./mvp_userflow.md)
+  - [Finding locations](./user-flows/find_locations.md)
+  - [Smart Pickup](./user-flows/smart_pickup.md)
