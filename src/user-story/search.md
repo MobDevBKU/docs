@@ -1,7 +1,7 @@
-# Task 7
+# Tìm kiếm
 
-Overview
-# Context:
+## Context
+
 1. Đức muốn tìm một tuyến xe bus để đi về nhà, Đức mở ứng dụng, một bản đồ sẽ được hiện ra với vị trí của Đức là trung tâm và được ghim trên bản đồ. Đức nhập địa chỉ nhà và kết quả hiện ra là danh sách các tuyến đường mà bạn có thể đi.
 
 2. Vinh muốn đi chơi vào dịp lễ tình nhân nhưng vì biết trước ngày hôm đó sẽ đông khách, nên Vinh muốn sử dụng ứng dụng để đặt vé trước.
