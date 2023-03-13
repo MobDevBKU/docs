@@ -5,8 +5,10 @@
         <meta charset="UTF-8">
         <title>BusMap</title>
         <meta name="robots" content="noindex" />
+
+
         <!-- Custom HTML head -->
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -17,25 +19,29 @@
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
         <link rel="stylesheet" href="css/print.css" media="print">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="fonts/fonts.css">
+
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -51,7 +57,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -63,12 +69,14 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
+        <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -76,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="questions.html"><strong aria-hidden="true">1.</strong> First step</a></li><li class="chapter-item expanded "><a href="swot.html"><strong aria-hidden="true">2.</strong> SWOT approach</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="swot/busmap.html"><strong aria-hidden="true">2.1.</strong> Busmap</a></li><li class="chapter-item expanded "><a href="swot/go!bus.html"><strong aria-hidden="true">2.2.</strong> Go!Bust</a></li><li class="chapter-item expanded "><a href="swot/moovit.html"><strong aria-hidden="true">2.3.</strong> Moovit</a></li><li class="chapter-item expanded "><a href="swot/wanderu.html"><strong aria-hidden="true">2.4.</strong> WanderU</a></li><li class="chapter-item expanded "><a href="swot/flixbus.html"><strong aria-hidden="true">2.5.</strong> FlixBus</a></li></ol></li><li class="chapter-item expanded "><a href="biz.html"><strong aria-hidden="true">3.</strong> Business Model</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="biz-model/analysis.html"><strong aria-hidden="true">3.1.</strong> Business Analysis</a></li><li class="chapter-item expanded "><a href="biz-model/canvas.html"><strong aria-hidden="true">3.2.</strong> Business Canvas</a></li></ol></li><li class="chapter-item expanded "><a href="slogan.html"><strong aria-hidden="true">4.</strong> Apps's slogan</a></li><li class="chapter-item expanded "><a href="biz.html"><strong aria-hidden="true">5.</strong> Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="features/overview.html"><strong aria-hidden="true">5.1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="features/find_locations.html"><strong aria-hidden="true">5.2.</strong> Find locations</a></li><li class="chapter-item expanded "><a href="features/select_area.html"><strong aria-hidden="true">5.3.</strong> Select the area</a></li><li class="chapter-item expanded "><a href="features/wallet_payment.html"><strong aria-hidden="true">5.4.</strong> Wallet payment</a></li><li class="chapter-item expanded "><a href="features/preferred_routes.html"><strong aria-hidden="true">5.5.</strong> Preferred routes</a></li></ol></li><li class="chapter-item expanded "><a href="matrix_n_mvp.html"><strong aria-hidden="true">6.</strong> Impact Effort Matrix and features for MVP</a></li><li class="chapter-item expanded "><a href="btl_mobile/task7.html"><strong aria-hidden="true">7.</strong> Task 7</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="questions.html"><strong aria-hidden="true">1.</strong> First step</a></li><li class="chapter-item expanded "><a href="swot.html"><strong aria-hidden="true">2.</strong> SWOT approach</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="swot/busmap.html"><strong aria-hidden="true">2.1.</strong> Busmap</a></li><li class="chapter-item expanded "><a href="swot/go!bus.html"><strong aria-hidden="true">2.2.</strong> Go!Bust</a></li><li class="chapter-item expanded "><a href="swot/moovit.html"><strong aria-hidden="true">2.3.</strong> Moovit</a></li><li class="chapter-item expanded "><a href="swot/wanderu.html"><strong aria-hidden="true">2.4.</strong> WanderU</a></li><li class="chapter-item expanded "><a href="swot/flixbus.html"><strong aria-hidden="true">2.5.</strong> FlixBus</a></li></ol></li><li class="chapter-item expanded "><a href="biz.html"><strong aria-hidden="true">3.</strong> Business Model</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="biz-model/analysis.html"><strong aria-hidden="true">3.1.</strong> Business Analysis</a></li><li class="chapter-item expanded "><a href="biz-model/canvas.html"><strong aria-hidden="true">3.2.</strong> Business Canvas</a></li></ol></li><li class="chapter-item expanded "><a href="slogan.html"><strong aria-hidden="true">4.</strong> Apps's slogan</a></li><li class="chapter-item expanded "><a href="features.html"><strong aria-hidden="true">5.</strong> Features</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="features/overview.html"><strong aria-hidden="true">5.1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="features/find_locations.html"><strong aria-hidden="true">5.2.</strong> Find locations</a></li><li class="chapter-item expanded "><a href="features/select_area.html"><strong aria-hidden="true">5.3.</strong> Select the area</a></li><li class="chapter-item expanded "><a href="features/wallet_payment.html"><strong aria-hidden="true">5.4.</strong> Wallet payment</a></li><li class="chapter-item expanded "><a href="features/preferred_routes.html"><strong aria-hidden="true">5.5.</strong> Preferred routes</a></li></ol></li><li class="chapter-item expanded "><a href="matrix_n_mvp.html"><strong aria-hidden="true">6.</strong> Impact Effort Matrix and features for MVP</a></li><li class="chapter-item expanded "><a href="user-story/index.html"><strong aria-hidden="true">7.</strong> Task 7</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="user-story/overview.html"><strong aria-hidden="true">7.1.</strong> Tổng quan</a></li><li class="chapter-item expanded "><a href="user-story/search.html"><strong aria-hidden="true">7.2.</strong> Tìm kiếm</a></li><li class="chapter-item expanded "><a href="user-story/smart-pickup.html"><strong aria-hidden="true">7.3.</strong> Đón xe thông minh</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -84,7 +92,7 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
+                                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -94,7 +102,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -111,6 +119,7 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+
                     </div>
                 </div>
 
@@ -124,8 +133,9 @@
                         </ul>
                     </div>
                 </div>
+
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -619,18 +629,20 @@
 <li>Revenue:</li>
 </ol>
 <ul>
-<li>Nền tảng miễn phí, lợi nhuận dựa vào việc người dùng ủng hộ (&quot;subscribe&quot;). </li>
+<li>Nền tảng miễn phí, lợi nhuận dựa vào việc người dùng ủng hộ (&quot;subscribe&quot;).</li>
 <li>Bên cạnh đó, ứng dụng còn cung cấp các tính năng cao cấp dành cho người dùng đăng ký gói &quot;premium&quot;.</li>
 <li>Chạy quảng cáo trong ứng dụng.</li>
 <li>Chia sẻ lợi nhuận với doanh nghiệp vận tải khi đạt chỉ tiêu doanh thu.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="name-of-app-buswise"><a class="header" href="#name-of-app-buswise">Name of app: Buswise</a></h3>
 <h3 id="its-slogan-arrive-on-time-every-time---Đi-mọi-lúc-đến-mọi-nơi"><a class="header" href="#its-slogan-arrive-on-time-every-time---Đi-mọi-lúc-đến-mọi-nơi">Its slogan: Arrive on time, every time - Đi mọi lúc, đến mọi nơi</a></h3>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="business-model-for-busmap-application-1"><a class="header" href="#business-model-for-busmap-application-1">Business Model for BusMap application</a></h1>
-<h2 id="figma-link-1"><a class="header" href="#figma-link-1"><a href="https://www.figma.com/file/G5iZiKAtHa8HGFnDq91Um5/Onboarding?node-id=30%3A97&amp;t=MIXYXhNe45wU3gK5-0">Figma link</a></a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="features-analysis"><a class="header" href="#features-analysis">Features Analysis</a></h1>
 <ul>
-<li><a href="./biz-model/analysis.html">Analysis</a></li>
-<li><a href="./biz-model/canvas.html">Canvas</a></li>
+<li><a href="./features/overview.html">Overview</a></li>
+<li><a href="./features/find_locations.html">Find locations</a></li>
+<li><a href="./features/select_area.html">Select the area</a></li>
+<li><a href="./features/wallet_payment.html">Wallet payment</a></li>
+<li><a href="./features/preferred_routes.html">Preferred routes</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tính-năng-tổng-quan"><a class="header" href="#tính-năng-tổng-quan">Tính năng Tổng quan</a></h1>
 <h1 id="tagline-homepage"><a class="header" href="#tagline-homepage">Tagline: Homepage</a></h1>
@@ -642,20 +654,20 @@
 <li>Liệt kê các banner quảng cáo các ví điện tử có thể thanh toán trên ứng dụng</li>
 <li></li>
 </ul>
-<h1 id="purpose"><a class="header" href="#purpose">Purpose:</a></h1>
+<h1 id="purpose"><a class="header" href="#purpose">Purpose</a></h1>
 <ul>
 <li>Cung cấp một cái nhìn tổng quan ngắn gọn về các tính năng độc đáo và quan trọng nhất của ứng dụng, giúp người dùng hiểu biết chung về sản phẩm trước khi đi sâu vào các tính năng và thông số kỹ thuật chi tiết hơn.</li>
 </ul>
-<h1 id="benefit"><a class="header" href="#benefit">Benefit:</a></h1>
+<h1 id="benefit"><a class="header" href="#benefit">Benefit</a></h1>
 <ul>
 <li>
-<p>Giúp người dùng nhanh chóng đánh giá xem sản phẩm hoặc dịch vụ có đáp ứng nhu cầu và sở thích của họ hay không. </p>
+<p>Giúp người dùng nhanh chóng đánh giá xem sản phẩm hoặc dịch vụ có đáp ứng nhu cầu và sở thích của họ hay không.</p>
 </li>
 <li>
-<p>Nó cũng giúp người dùng hiểu được đề xuất giá trị của sản phẩm hoặc dịch vụ và nó khác với các sản phẩm hoặc dịch vụ tương tự khác trên thị trường như thế nào. </p>
+<p>Nó cũng giúp người dùng hiểu được đề xuất giá trị của sản phẩm hoặc dịch vụ và nó khác với các sản phẩm hoặc dịch vụ tương tự khác trên thị trường như thế nào.</p>
 </li>
 </ul>
-<h1 id="technical-approach"><a class="header" href="#technical-approach">Technical approach:</a></h1>
+<h1 id="technical-approach"><a class="header" href="#technical-approach">Technical approach</a></h1>
 <ul>
 <li>
 <p>Nhóm định nghĩa, sáng tạo, tham khảo các slogan, vision của các ứng dụng đã có như là core-values của ứng dụng. Lưu và hiển thị trên trang tổng quan</p>
@@ -676,7 +688,7 @@
 <p>Hiển thị các ví điện tử đối tác</p>
 </li>
 </ul>
-<h1 id="test"><a class="header" href="#test">Test:</a></h1>
+<h1 id="test"><a class="header" href="#test">Test</a></h1>
 <ol>
 <li>Định nghĩa toàn bộ bối cảnh cho feature &quot;tổng quan&quot;</li>
 <li>Vẽ các flow test, ghi chú, phân tích để dễ dàng kiểm tra</li>
@@ -689,23 +701,23 @@
 <li>Danh sách các tuyến xe bus</li>
 <li>Hiển thị bản đồ</li>
 </ul>
-<h1 id="purpose-1"><a class="header" href="#purpose-1">Purpose:</a></h1>
+<h1 id="purpose-1"><a class="header" href="#purpose-1">Purpose</a></h1>
 <ul>
 <li>Giúp người dùng tìm kiếm vị trí</li>
 <li>Hiển thị các tuyến đường, các tuyến xe bus mà người dùng có thể đi đến vị trí cần đến</li>
 </ul>
-<h1 id="benefit-1"><a class="header" href="#benefit-1">Benefit:</a></h1>
+<h1 id="benefit-1"><a class="header" href="#benefit-1">Benefit</a></h1>
 <ul>
 <li>Cung cấp thông tin về các tuyến đường nhanh chóng, hiệu quả, không tốn quá nhiều công sức</li>
 </ul>
-<h1 id="technical-approach-1"><a class="header" href="#technical-approach-1">Technical approach:</a></h1>
+<h1 id="technical-approach-1"><a class="header" href="#technical-approach-1">Technical approach</a></h1>
 <ul>
 <li>Khi người dùng bấm vào thanh tìm kiếm, một modal hiện ra danh sách các địa điểm</li>
 <li>Sau khi chọn đúng địa điểm, quay về trang tổng quan với bản đồ được đánh dấu vị trí hiện tại, địa điểm đến, và các tuyến xe bus</li>
 <li>Sử dụng API của Google Map</li>
 <li>Hiện thực các logic liên quan</li>
 </ul>
-<h1 id="test-1"><a class="header" href="#test-1">Test:</a></h1>
+<h1 id="test-1"><a class="header" href="#test-1">Test</a></h1>
 <ol>
 <li>Định nghĩa toàn bộ bối cảnh cho feature &quot;tìm kiếm địa điểm&quot;</li>
 <li>Vẽ các flow test, ghi chú, phân tích để dễ dàng kiểm tra</li>
@@ -717,22 +729,22 @@
 <li>Hiển thị bản đồ</li>
 <li>Chọn khu vực</li>
 </ul>
-<h1 id="purpose-2"><a class="header" href="#purpose-2">Purpose:</a></h1>
+<h1 id="purpose-2"><a class="header" href="#purpose-2">Purpose</a></h1>
 <ul>
 <li>Giúp người chọn khu vực</li>
 <li>Giúp người dùng có bản đồ các trạm bus tại khu vực mình đang sống khi không có kết nối internet</li>
 </ul>
-<h1 id="benefit-2"><a class="header" href="#benefit-2">Benefit:</a></h1>
+<h1 id="benefit-2"><a class="header" href="#benefit-2">Benefit</a></h1>
 <ul>
 <li>Khắc phục các sự cố liên quan đến internet cho người dùng</li>
 </ul>
-<h1 id="technical-approach-2"><a class="header" href="#technical-approach-2">Technical approach:</a></h1>
+<h1 id="technical-approach-2"><a class="header" href="#technical-approach-2">Technical approach</a></h1>
 <ul>
 <li>Định vị khu vực sống, thường xuyên được đánh dấu trong lịch sử đi lại của người dùng</li>
 <li>Lưu bản đồ các tuyến xe trong khu vực ở local storage</li>
 <li>Khi không có internet, có thể lấy bản đồ và hiển thị trên ứng dụng</li>
 </ul>
-<h1 id="test-2"><a class="header" href="#test-2">Test:</a></h1>
+<h1 id="test-2"><a class="header" href="#test-2">Test</a></h1>
 <ol>
 <li>Định nghĩa toàn bộ bối cảnh cho feature &quot;lựa chọn khu vực&quot;</li>
 <li>Vẽ các flow test, ghi chú, phân tích để dễ dàng kiểm tra</li>
@@ -744,25 +756,25 @@
 <li>Thanh toán</li>
 <li>Ví điện tử</li>
 </ul>
-<h1 id="purpose-3"><a class="header" href="#purpose-3">Purpose:</a></h1>
+<h1 id="purpose-3"><a class="header" href="#purpose-3">Purpose</a></h1>
 <ul>
 <li>Mở rộng phương thức thanh toán cho ứng dụng</li>
 <li>Tăng thêm sự tiện lợi cho khách hàng</li>
 </ul>
-<h1 id="benefit-3"><a class="header" href="#benefit-3">Benefit:</a></h1>
+<h1 id="benefit-3"><a class="header" href="#benefit-3">Benefit</a></h1>
 <ul>
 <li>Giúp người dùng dễ dàng hơn trong việc trả phí đi xe bus</li>
 <li>Khắc phục sự cố khi quên mang theo ví, tiền mặt</li>
-<li>Nâng cao trải nghiệm khi đi xe bus </li>
+<li>Nâng cao trải nghiệm khi đi xe bus</li>
 </ul>
-<h1 id="technical-approach-3"><a class="header" href="#technical-approach-3">Technical approach:</a></h1>
+<h1 id="technical-approach-3"><a class="header" href="#technical-approach-3">Technical approach</a></h1>
 <ul>
 <li>Tạo tài khoản ví điện tử và mã QR cho doanh nghiệp vận tải</li>
 <li>Người dùng quét mã thanh toán</li>
 <li>Lưu thông tin giao dịch</li>
-<li>Hiển thị trạng thái thanh toán thành công hoặc thất bại trên ứng dụng điện thoại </li>
+<li>Hiển thị trạng thái thanh toán thành công hoặc thất bại trên ứng dụng điện thoại</li>
 </ul>
-<h1 id="test-3"><a class="header" href="#test-3">Test:</a></h1>
+<h1 id="test-3"><a class="header" href="#test-3">Test</a></h1>
 <ol>
 <li>Định nghĩa toàn bộ bối cảnh cho feature &quot;Thanh toán bằng ví điện tử&quot;</li>
 <li>Vẽ các flow test, ghi chú, phân tích để dễ dàng kiểm tra</li>
@@ -774,33 +786,34 @@
 <li>Các tuyến đường thường xuyên đi</li>
 <li>Dễ dàng tìm kiếm</li>
 </ul>
-<h1 id="purpose-4"><a class="header" href="#purpose-4">Purpose:</a></h1>
+<h1 id="purpose-4"><a class="header" href="#purpose-4">Purpose</a></h1>
 <ul>
 <li>Lưu danh sách các tuyến đường thường xuyên được sử dụng</li>
 </ul>
-<h1 id="benefit-4"><a class="header" href="#benefit-4">Benefit:</a></h1>
+<h1 id="benefit-4"><a class="header" href="#benefit-4">Benefit</a></h1>
 <ul>
 <li>Giúp người dùng nhanh chóng tìm kiếm, lựa chọn tuyến đường</li>
 <li>Nâng cao trải nghiệm người dùng.</li>
 </ul>
-<h1 id="technical-approach-4"><a class="header" href="#technical-approach-4">Technical approach:</a></h1>
+<h1 id="technical-approach-4"><a class="header" href="#technical-approach-4">Technical approach</a></h1>
 <ul>
 <li>Có nút bấm để lưu lại tuyến đường khi tìm kiếm tuyến đường</li>
 <li>Người dùng có thể bấm xem danh sách các tuyến đường được lưu</li>
 <li>Hiển thị danh sách</li>
 <li>Lựa chọn tuyến đường cụ thể, ứng dụng chuyển tiếp về bản đồ ở trang Tổng quan</li>
 </ul>
-<h1 id="test-4"><a class="header" href="#test-4">Test:</a></h1>
+<h1 id="test-4"><a class="header" href="#test-4">Test</a></h1>
 <ol>
 <li>Định nghĩa toàn bộ bối cảnh cho feature &quot;Danh sách yêu thích&quot;</li>
 <li>Vẽ các flow test, ghi chú, phân tích để dễ dàng kiểm tra</li>
 <li>Báo cáo kết quả với các stakeholders</li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="impact-effort-matrix"><a class="header" href="#impact-effort-matrix">Impact Effort Matrix</a></h2>
-<table><thead><tr><th></th><th><strong>Low impact</strong></th><th><strong>High impact</strong></th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th></th><th><strong>Low impact</strong></th><th><strong>High impact</strong></th></tr></thead><tbody>
 <tr><td><strong>Low effort</strong></td><td>- Tổng quan<br>- Tìm kiếm (địa điểm, tuyến xe,...)<br>- Danh sách yêu thích<br>- Feedback</td><td>(trống)</td></tr>
 <tr><td><strong>High effort</strong></td><td>- Cộng đồng</td><td>- Đón xe thông minh<br>- Thanh toán online<br>- Offline map</td></tr>
 </tbody></table>
+</div>
 <h2 id="feature-for-mvp"><a class="header" href="#feature-for-mvp">Feature for MVP</a></h2>
 <p>Bao gồm các tính năng sau:</p>
 <ol>
@@ -809,36 +822,70 @@
 <li>Đón xe thông minh</li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-7"><a class="header" href="#task-7">Task 7</a></h1>
+<p>Xác định MVP:</p>
+<ol>
+<li><a href="user-story/./overview.html">Tổng quan</a></li>
+<li><a href="user-story/./search.html">Tìm kiếm</a></li>
+<li><a href="user-story/./smart-pickup.html">Đón xe thông minh</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tổng-quan"><a class="header" href="#tổng-quan">Tổng quan</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tìm-kiếm"><a class="header" href="#tìm-kiếm">Tìm kiếm</a></h1>
+<h2 id="context"><a class="header" href="#context">Context</a></h2>
+<ol>
+<li>
+<p>Đức muốn tìm một tuyến xe bus để đi về nhà, Đức mở ứng dụng, một bản đồ sẽ được hiện ra với vị trí của Đức là trung tâm và được ghim trên bản đồ. Đức nhập địa chỉ nhà và kết quả hiện ra là danh sách các tuyến đường mà bạn có thể đi.</p>
+</li>
+<li>
+<p>Vinh muốn đi chơi vào dịp lễ tình nhân nhưng vì biết trước ngày hôm đó sẽ đông khách, nên Vinh muốn sử dụng ứng dụng để đặt vé trước.
+Nút đặt vé nằm ngay ở trang tổng quan nên Vinh dễ dàng bấm vào đấy.</p>
+</li>
+<li>
+<p>Mạnh vì để quên balo ở trên xe bus, Mạnh cần biết thông tin của xe bus, công ty vận tải (số điện thoại, email, ...) để có thể liên lạc nhằm được hỗ trợ. Mạnh mở ứng dụng và dễ dàng chọn vào sidebar bên trái, kéo xuống phần &quot;Liên hệ&quot; và có được thông tin mình cần.</p>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Đón-xe-thông-minh"><a class="header" href="#Đón-xe-thông-minh">Đón xe thông minh</a></h1>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+
+
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
             </nav>
 
         </div>
 
-        <script type="text/javascript">
+
+
+
+        <script>
             window.playground_copyable = true;
         </script>
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
-        <script type="text/javascript">
+
+        <script>
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
         });
         </script>
+
+    </div>
     </body>
 </html>
