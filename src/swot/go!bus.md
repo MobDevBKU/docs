@@ -28,13 +28,9 @@
 ## Opportunities (Cơ hội)
 
 - Tăng cường hợp tác với các đối tác, như các nhà khai thác xe buýt, nhà chức trách và các công ty dịch vụ công nghệ để cung cấp thông tin về giao thông công cộng chính xác hơn và nhanh chóng hơn. Điều này có thể giúp nâng cao trải nghiệm của người dùng và mở rộng thị trường cho ứng dụng.
-
 - Mở rộng phạm vi hoạt động đến các thành phố và khu vực mới, cũng như mở rộng dịch vụ của mình để bao gồm các phương tiện giao thông công cộng khác như tàu điện ngầm và xe điện.
-
 - Phát triển tính năng mới để thu hút người dùng, như tính năng đặt chỗ trước, tính năng chia sẻ chuyến đi hoặc tính năng thanh toán trực tuyến.
-
 - Sử dụng trí tuệ nhân tạo và dữ liệu lớn để phân tích dữ liệu và cung cấp thông tin chi tiết hơn về giao thông công cộng, giúp người dùng có được trải nghiệm đi lại tốt hơn.
-
 - Tích hợp với các ứng dụng khác nhằm cung cấp cho người dùng thông tin đa dạng về đi lại, chẳng hạn như tích hợp với ứng dụng đặt vé máy bay hoặc ứng dụng đặt xe taxi.
 
 ## Threats (Đe dọa)
